@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
+import "./CheckOut.css";
 
 const CheckOut = () => {
   const { price, _id, title } = useLoaderData();
@@ -32,6 +33,7 @@ const CheckOut = () => {
       method: "POST",
       headers: {
         "content-type": "application/json",
+        authorization: `Bearer ${localStorage.getItem("genius-token")}`,
       },
       body: JSON.stringify(order),
     })
@@ -54,7 +56,7 @@ const CheckOut = () => {
           Price: ${price}
         </p>
       </div>
-      <form onSubmit={handlePlaceOrder} className="p-40">
+      <form onSubmit={handlePlaceOrder} className="p-40 checkout-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <input
             name="firstName"

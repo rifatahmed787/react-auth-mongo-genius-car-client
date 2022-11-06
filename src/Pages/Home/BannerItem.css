@@ -7,3 +7,27 @@
   display:inline-block;
   background: linear-gradient(to right, rgb(5, 2, 2) 0%,rgba(255, 254, 254, 0) 100%);
 }
+
+.banner-header{
+  font-size: 3.75rem;
+  line-height: 1;
+  color: white;
+
+}
+
+@media only screen and (max-width: 600px) {
+ .header-text{
+  visibility: hidden;
+ }
+ .header-style{
+  font-size: xx-large;
+ }
+
+ .header-button{
+  font-size: 10px;
+ }
+.header-btn{
+  visibility: hidden;
+}
+
+}

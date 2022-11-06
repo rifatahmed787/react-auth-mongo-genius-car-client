@@ -15,7 +15,7 @@ const Services = () => {
         <h1 className="text-2xl text-orange-600 font-bold">Service</h1>
         <p className="font-semibold text-5xl">Our Service Area</p>
         <p className="">
-          the majority have suffered alteration in some form, by injected
+          The majority have suffered alteration in some form, by injected
           humour, or randomised <br /> words which don't look even slightly
           believable.
         </p>

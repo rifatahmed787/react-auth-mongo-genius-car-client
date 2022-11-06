@@ -15,18 +15,18 @@ const About = () => {
           />
         </div>
         <div className="w-1/2">
-          <h1 className="text-2xl text-orange-600 font-bold">About Us</h1>
+          <h1 className="text-2xl text-orange-600 font-bold mt-3">About Us</h1>
           <h1 className="text-5xl font-bold mt-3 ">
             We are qualified <br /> & of experience <br /> in this field
           </h1>
-          <p className="py-6  w-3/4">
+          <p className="py-6 w-3/4">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
             believable.
           </p>
           <p className="pb-3  w-3/4">
-            the majority have suffered alteration in some form, by injected
+            The majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
             believable.
           </p>

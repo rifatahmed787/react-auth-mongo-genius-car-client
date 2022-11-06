@@ -5,7 +5,11 @@ const OrderRow = ({ order, handleDelete, hanldeStatusUpdate }) => {
   const [orderService, setOrderService] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${service}`)
+    fetch(`http://localhost:5000/services/${service}`, {
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("genius-token")}`,
+      },
+    })
       .then((res) => res.json())
       .then((data) => setOrderService(data));
   }, [service]);
