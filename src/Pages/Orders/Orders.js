@@ -77,7 +77,7 @@ const Orders = () => {
             <th>Delete</th>
             <th>Name</th>
             <th>Service Name</th>
-            <th>Favorite Color</th>
+            <th>Orders Condition</th>
             <th></th>
           </tr>
         </thead>

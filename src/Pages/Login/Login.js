@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import svg from "../../assets/images/login/login.svg";
 import { AuthContext } from "../../contexts/AuthProvider";
+import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -16,7 +17,7 @@ const Login = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     form.reset();
 
     logIn(email, password)
@@ -89,6 +90,7 @@ const Login = () => {
               </button>
             </div>
           </form>
+          <SocialLogin></SocialLogin>
           <p className="text-center mb-5 ">
             New to genius car please{" "}
             <Link className="font-bold text-orange-600" to="/signup">

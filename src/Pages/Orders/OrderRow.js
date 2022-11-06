@@ -46,7 +46,7 @@ const OrderRow = ({ order, handleDelete, hanldeStatusUpdate }) => {
         <br />
         <span className="badge badge-ghost badge-sm">${price}</span>
       </td>
-      <td>Purple</td>
+
       <th>
         <button
           onClick={() => hanldeStatusUpdate(_id)}
